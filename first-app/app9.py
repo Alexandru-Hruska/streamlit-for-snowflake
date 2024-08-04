@@ -30,7 +30,7 @@ else:
     filenames = ["employees.csv"]
     st.session_state["names"] = filenames
 
-filename = "employees.csv"
+filename = "data/employees.csv"
 uploaded_file = st.sidebar.file_uploader(
     "Upload a CSV file", type=["csv"], accept_multiple_files=False)
 if uploaded_file is not None:
